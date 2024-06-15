@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro Triple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="cronometros-container">
+            <div class="cronometro-column">
+                <div class="cronometro" id="cronometro1">00:00:00</div>
+                <div class="status" id="status1">En pausa</div>
+                <div class="input-group">
+                    <label for="horas1">Horas:</label>
+                    <input type="number" id="horas1" min="0" step="1" required>
+                    <label for="minutos1">Minutos:</label>
+                    <input type="number" id="minutos1" min="0" max="59" step="1" required>
+                    <label for="segundos1">Segundos:</label>
+                    <input type="number" id="segundos1" min="0" max="59" step="1" required>
+                </div>
+            </div>
+            
+            <div class="cronometro-column">
+                <div class="cronometro" id="cronometro2">00:00:00</div>
+                <div class="status" id="status2">En pausa</div>
+                <div class="input-group">
+                    <label for="horas2">Horas:</label>
+                    <input type="number" id="horas2" min="0" step="1" required>
+                    <label for="minutos2">Minutos:</label>
+                    <input type="number" id="minutos2" min="0" max="59" step="1" required>
+                    <label for="segundos2">Segundos:</label>
+                    <input type="number" id="segundos2" min="0" max="59" step="1" required>
+                </div>
+            </div>
+            
+            <div class="cronometro-column">
+                <div class="cronometro" id="cronometro3">00:00:00</div>
+                <div class="status" id="status3">En pausa</div>
+                <div class="input-group">
+                    <label for="horas3">Horas:</label>
+                    <input type="number" id="horas3" min="0" step="1" required>
+                    <label for="minutos3">Minutos:</label>
+                    <input type="number" id="minutos3" min="0" max="59" step="1" required>
+                    <label for="segundos3">Segundos:</label>
+                    <input type="number" id="segundos3" min="0" max="59" step="1" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="button-group">
+        <button id="resetButton">Reset</button>
+        <button id="startStopButton">Start</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
